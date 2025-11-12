@@ -1,0 +1,125 @@
+body{
+    font-family: Arial; 
+    background-color: #f4f4f4;
+    width:1528px;
+    margin:0px;
+    height:730px;
+}
+
+header,footer{
+    text-align: center;
+    background-color: #2E8B57;
+    width:1468px;  /* Calculo del ancho usable (width): 1528 (body) - 60px de padding: 14px.    ESPACIO TOTAL 1528px*/
+    height: 40px; /* Alto total: 40px + 60 (padding) =100px;   ALTO USABLE: 40px*/
+    padding:30px;
+}
+header{
+    position:relative;
+}
+header a{
+    position:absolute;
+    top:40px;
+    right:70px;
+    text-decoration: none;
+}
+
+#inicioSesion:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+header h1{
+    margin:0px;
+    color: #f4f4f4;
+}
+nav{
+    background-color:lightblue;
+    padding:20px;
+    text-align: center;
+    width:1488px;  /* Calculo del ancho usable (width): 1528 (body) - 40px de padding: 1488px.    ESPACIO TOTAL 1528px*/
+    height: 20px; /*ALTO TOTAL: 20px +(40 padding) = 60px;  ALTO USABLE: 20PX*/
+
+}
+
+nav a{
+    display: inline-block;
+    margin:0 30px;
+    width: 85px; /*nav: 1488px. 200px x 4 div = 800px ocupan los div*/
+    height: 20px;
+    color: purple;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#enlaceOnu{
+    width:200px;
+}
+
+nav a:hover{
+    text-decoration: underline
+}
+
+aside{
+    padding:30px;
+    width: 300px; /*ancho total 300 + 60 padding = 360   ANCHO USABLE: 300px*/
+    height:410px; /*730(body) - 100(header)-100(footer)-60(nav) = 470PX(alto total disponible) - 60(padding) = 410px */
+    background-color: aqua;
+    float:left;
+    position:relative;
+}
+footer{
+    clear:both;
+    color:white;
+}
+
+aside img{
+    width:300px;
+    height: auto;
+}
+
+aside p{
+    width:300px;
+}
+
+main{
+    width: 1128px; /*1528(body) - 360 (aside) = 1168px TOTAL - 40(padding) = 1128px usables*/
+    height: 430px; /*730(body) - 100(header)-100(footer)-60(nav) = 470PX(alto total disponible) - 40(padding) = 430px */
+    float:left;
+    padding: 20px;
+}
+
+form{
+    width:500px;
+    background-color:antiquewhite;
+    padding:20px;
+    margin:auto;
+    border-radius:10px;
+}
+input, select{
+    border-radius:5px;
+    margin-left:30px;
+    padding:4px 7px;
+}
+
+
+form div{
+    margin-bottom:20px;
+}
+
+#enviar{
+    background-color:#2E8B57;
+    display:block;
+    color:white;
+    margin:auto;
+    width:100px; /*BORDER BOX => incluye el ancho total con padding*/
+    padding:0 10px;
+}
+
+#masInfo{
+    position: absolute;
+    bottom:40px;
+}
+
+#email{
+    width:300px;
+}
